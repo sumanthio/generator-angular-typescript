@@ -238,23 +238,25 @@ module.exports = function (grunt) {
     typescript: {
       base: {
         src: ['<%%= yeoman.app %>/scripts/{,*/}*.ts'],
-          dest: '.tmp/scripts',
-          options: {
+        dest: '.tmp/scripts',
+        options: {
           module: 'amd', //or commonjs
-            target: 'es5', //or es3
-            'base_path': '<%%= yeoman.app %>/scripts', //quoting base_path to get around jshint warning.
-            sourcemap: true,
-            declaration: true
+          target: 'es5', //or es3
+          'base_path': '<%%= yeoman.app %>/scripts', //quoting base_path to get around jshint warning.
+          sourcemap: true,
+          declaration: true,
+          removeComments: false
         }
       },
       test: {
         src: ['test/spec/{,*/}*.ts', 'test/e2e/{,*/}*.ts'],
-          dest: '.tmp/spec',
-          options: {
+        dest: '.tmp/spec',
+        options: {
           module: 'amd', //or commonjs
-            target: 'es5', //or es3
-            sourcemap: true,
-            declaration: true
+          target: 'es5', //or es3
+          sourcemap: true,
+          declaration: true,
+          removeComments: false
         }
       }
     },

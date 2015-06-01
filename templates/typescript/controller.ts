@@ -8,7 +8,7 @@ module <%= scriptAppName %> {
   }
 
   export class <%= classedName %>Ctrl {
-
+    // @ngInject
     constructor (private $scope: I<%= classedName %>Scope) {
       $scope.awesomeThings = [
         'HTML5 Boilerplate',

@@ -8,7 +8,7 @@ module <%= scriptAppName %> {
   }
 
   export class <%= classedName %> {
-
+    // @ngInject
     constructor (private meaningOfLife) {
     }
 
