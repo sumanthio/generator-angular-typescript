@@ -84,7 +84,7 @@ var Generator = module.exports = function Generator(args, options) {
   });
 
   this.on('end', function () {
-    var jsExt = this.options.coffee ? 'coffee' : 'js';
+    var jsExt = this.options.coffee ? 'coffee' : this.options.typescript ? 'ts' : 'js';
 
     var bowerComments = [
       'bower:js',
@@ -100,6 +100,7 @@ var Generator = module.exports = function Generator(args, options) {
         'skip-install': this.options['skip-install'],
         'base-path': '../',
         'coffee': this.options.coffee,
+        'typescript': this.options.typescript,
         'travis': true,
         'files-comments': bowerComments.join(','),
         'app-files': 'app/scripts/**/*.' + jsExt,
