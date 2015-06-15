@@ -71,15 +71,15 @@ var Generator = module.exports = function Generator(args, options) {
     this.env.options.typescript = this.options.typescript;
   }
 
-  this.hookFor('angular:common', {
+  this.hookFor('angular-typescript:common', {
     args: args
   });
 
-  this.hookFor('angular:main', {
+  this.hookFor('angular-typescript:main', {
     args: args
   });
 
-  this.hookFor('angular:controller', {
+  this.hookFor('angular-typescript:controller', {
     args: args
   });
 
@@ -119,7 +119,7 @@ var Generator = module.exports = function Generator(args, options) {
     });
 
     if (this.env.options.ngRoute) {
-      this.invoke('angular:route', {
+      this.invoke('angular-typescript:route', {
         args: ['about']
       });
     }
