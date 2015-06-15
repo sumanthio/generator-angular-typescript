@@ -22,9 +22,9 @@ Make a new directory, and `cd` into it:
 mkdir my-new-project && cd $_
 ```
 
-Run `yo angular`, optionally passing an app name:
+Run `yo angular-typescript`, optionally passing an app name:
 ```
-yo angular [app-name]
+yo angular-typescript [app-name]
 ```
 
 Run `grunt` for building and `grunt serve` for preview
@@ -52,7 +52,7 @@ Sets up a new AngularJS app, generating all the boilerplate you need to get star
 
 Example:
 ```bash
-yo angular
+yo angular-typescript
 ```
 
 ### Route
@@ -60,7 +60,7 @@ Generates a controller and view, and configures a route in `app/scripts/app.js` 
 
 Example:
 ```bash
-yo angular:route myroute
+yo angular-typescript:route myroute
 ```
 
 Produces `app/scripts/controllers/myroute.js`:
@@ -79,7 +79,7 @@ Produces `app/views/myroute.html`:
 
 Example:
 ```bash
-yo angular:route myRoute --uri=my/route
+yo angular-typescript:route myRoute --uri=my/route
 ```
 
 Produces controller and view as above and adds a route to `app/scripts/app.js`
@@ -90,7 +90,7 @@ Generates a controller in `app/scripts/controllers`.
 
 Example:
 ```bash
-yo angular:controller user
+yo angular-typescript:controller user
 ```
 
 Produces `app/scripts/controllers/user.js`:
@@ -104,7 +104,7 @@ Generates a directive in `app/scripts/directives`.
 
 Example:
 ```bash
-yo angular:directive myDirective
+yo angular-typescript:directive myDirective
 ```
 
 Produces `app/scripts/directives/myDirective.js`:
@@ -125,7 +125,7 @@ Generates a filter in `app/scripts/filters`.
 
 Example:
 ```bash
-yo angular:filter myFilter
+yo angular-typescript:filter myFilter
 ```
 
 Produces `app/scripts/filters/myFilter.js`:
@@ -142,7 +142,7 @@ Generates an HTML view file in `app/views`.
 
 Example:
 ```bash
-yo angular:view user
+yo angular-typescript:view user
 ```
 
 Produces `app/views/user.html`:
@@ -155,7 +155,7 @@ Generates an AngularJS service.
 
 Example:
 ```bash
-yo angular:service myService
+yo angular-typescript:service myService
 ```
 
 Produces `app/scripts/services/myService.js`:
@@ -165,14 +165,14 @@ angular.module('myMod').service('myService', function () {
 });
 ```
 
-You can also do `yo angular:factory`, `yo angular:provider`, `yo angular:value`, and `yo angular:constant` for other types of services.
+You can also do `yo angular-typescript:factory`, `yo angular-typescript:provider`, `yo angular-typescript:value`, and `yo angular-typescript:constant` for other types of services.
 
 ### Decorator
 Generates an AngularJS service decorator.
 
 Example:
 ```bash
-yo angular:decorator serviceName
+yo angular-typescript:decorator serviceName
 ```
 
 Produces `app/scripts/decorators/serviceNameDecorator.js`:
@@ -193,7 +193,7 @@ For generators that output scripts, the `--coffee` option will output CoffeeScri
 
 For example:
 ```bash
-yo angular:controller user --coffee
+yo angular-typescript:controller user --coffee
 ```
 
 Produces `app/scripts/controller/user.coffee`:
@@ -204,7 +204,7 @@ angular.module('myMod')
 
 For example:
 ```bash
-yo angular:controller user --typescript
+yo angular-typescript:controller user --typescript
 ```
 
 Produces `app/scripts/controller/user.ts`:
@@ -259,7 +259,7 @@ By default, new scripts are added to the index.html file. However, this may not 
 
 To skip adding them to the index, pass in the skip-add argument:
 ```bash
-yo angular:service serviceName --skip-add
+yo angular-typescript:service serviceName --skip-add
 ```
 
 ## Bower Components
@@ -302,7 +302,7 @@ This will cause Yeoman-generated client-side files to be placed in `public`.
 
 Note that you can also achieve the same results by adding an `--appPath` option when starting generator:
 ```bash
-yo angular [app-name] --appPath=public
+yo angular-typescript [app-name] --appPath=public
 ```
 
 ## Testing
