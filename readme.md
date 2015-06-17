@@ -1,4 +1,4 @@
-# AngularJS generator [![Build Status](https://secure.travis-ci.org/onshape/generator-angular-typescript.svg?branch=master)](http://travis-ci.org/onshape/generator-angular-typescript)
+# AngularJS generator [![Build Status](https://secure.travis-ci.org/onshape/generator-angular-typescript.svg?branch=typescript)](http://travis-ci.org/onshape/generator-angular-typescript)
 
 > Yeoman generator for AngularJS - lets you quickly set up a project with sensible defaults and best practices.
 
